@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ichat- realtime node socket.io chat app</title>
+        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script defer src="js/client.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+    <body>
+ <nav>
+    
+    <img class="logo" src="chat.png" alt="">
+    
+     </nav>
+     <div class="container">
+   <!-- <div class="message right">hi</div> 
+    <div class="message left">yo</div>  -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp"  id="messageInp">
+            <button class="btn" type="submit">send</button> 
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="Smartbot"
+        agent-id="9c2c8ec5-8562-44fe-886b-421259c4ab07"
+        language-code="en"
+        ></df-messenger>
+        </body>
+    </html>
